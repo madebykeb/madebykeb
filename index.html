@@ -275,7 +275,25 @@ li{
 }
 
 .highlight{
-    border:5px solid #ffc400;
+    position:relative;
+    border:3px solid #ffc400;
+}
+
+.highlight::before{
+    content:"MOST POPULAR";
+    position:absolute;
+    top:-18px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#ffc400;
+    color:#101010;
+    font-size:.8rem;
+    font-weight:900;
+    padding:8px 16px;
+    border-radius:999px;
+    text-transform:uppercase;
+    letter-spacing:.5px;
+    white-space:nowrap;
 }
 
 .about-box{
@@ -476,6 +494,18 @@ footer{
 
             <div class="portfolio-card">
                 <div class="portfolio-image">
+                    <img src="https://primary.jwwb.nl/public/l/y/c/temp-wvtzrtmtxegucqwwsmov/screenshot-2026-06-04-121233-high.png?enable-io=true&width=816" alt="The Stupid History Minute website example">
+                </div>
+                <div class="portfolio-content">
+                    <span class="portfolio-tag">Creator Brand</span>
+                    <h3>The Stupid History Minute</h3>
+                    <p>A bold, mobile-friendly podcast website designed to highlight episodes, books, speaking appearances, and listener engagement.</p>
+                </div>
+            </div>
+
+
+            <div class="portfolio-card">
+                <div class="portfolio-image">
                     <img src="https://primary.jwwb.nl/public/l/y/c/temp-wvtzrtmtxegucqwwsmov/screenshot-2026-06-04-121200-high.png?enable-io=true&width=816" alt="Koehler Home Improvement website example">
                 </div>
                 <div class="portfolio-content">
@@ -598,11 +628,11 @@ footer{
                     <li>3 revisions</li>
                     <li>Website files delivered</li>
                 </ul>
-                <a class="btn" href="mailto:hello@madebykeb.com?subject=Business Website Inquiry">Most Popular</a>
+                <a class="btn" href="mailto:hello@madebykeb.com?subject=Business Website Inquiry">Get Started</a>
             </div>
 
             <div class="card">
-                <h3>Professional Website</h3>
+                <h3>Business Plus Website</h3>
                 <div class="price">$699</div>
                 <p>Best for businesses with multiple services, more content, or a bigger online presence.</p>
                 <ul>
@@ -614,7 +644,7 @@ footer{
                     <li>5 revisions</li>
                     <li>Website files delivered</li>
                 </ul>
-                <a class="btn" href="mailto:hello@madebykeb.com?subject=Professional Website Inquiry">Build My Site</a>
+                <a class="btn" href="mailto:hello@madebykeb.com?subject=Business Plus Website Inquiry">Get Started</a>
             </div>
         </div>
     </div>
