@@ -265,23 +265,6 @@ section{
     margin:15px 0;
 }
 
-#pricing .grid-3{
-    align-items:stretch;
-}
-
-#pricing .card{
-    display:flex;
-    flex-direction:column;
-}
-
-#pricing .card ul{
-    flex-grow:1;
-}
-
-#pricing .card .btn{
-    align-self:flex-start;
-    margin-top:auto;
-}
 
 ul{
     padding-left:22px;
@@ -360,6 +343,32 @@ footer{
     padding:35px 20px;
     background:#050505;
     color:#aaaaaa;
+}
+
+
+/* FIX PRICING CARD BUTTON ALIGNMENT */
+#pricing .grid-3{
+    align-items:stretch;
+}
+
+#pricing .card{
+    min-height:620px;
+    display:flex;
+    flex-direction:column;
+}
+
+#pricing .card p{
+    min-height:82px;
+}
+
+#pricing .card ul{
+    flex:1;
+    margin-bottom:30px;
+}
+
+#pricing .card .btn{
+    margin-top:auto;
+    align-self:flex-start;
 }
 
 @media(max-width:900px){
