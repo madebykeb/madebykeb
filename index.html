@@ -265,7 +265,6 @@ section{
     margin:15px 0;
 }
 
-
 ul{
     padding-left:22px;
     margin:20px 0;
@@ -277,7 +276,6 @@ li{
 
 .highlight{
     border:5px solid #ffc400;
-    transform:scale(1.03);
 }
 
 .about-box{
@@ -346,29 +344,47 @@ footer{
 }
 
 
-/* FIX PRICING CARD BUTTON ALIGNMENT */
+/* PRICING CARD ALIGNMENT FIX */
 #pricing .grid-3{
     align-items:stretch;
 }
 
 #pricing .card{
-    min-height:620px;
-    display:flex;
-    flex-direction:column;
+    height:100%;
+    display:grid;
+    grid-template-rows:auto auto 95px 1fr auto;
+}
+
+#pricing .card h3{
+    margin-bottom:12px;
+}
+
+#pricing .card .price{
+    margin:10px 0 18px;
 }
 
 #pricing .card p{
-    min-height:82px;
+    margin-bottom:16px;
 }
 
 #pricing .card ul{
-    flex:1;
-    margin-bottom:30px;
+    margin:0 0 28px;
 }
 
 #pricing .card .btn{
-    margin-top:auto;
-    align-self:flex-start;
+    align-self:end;
+    justify-self:start;
+}
+
+@media(max-width:900px){
+    #pricing .card{
+        display:block;
+        height:auto;
+    }
+
+    #pricing .card .btn{
+        margin-top:10px;
+    }
 }
 
 @media(max-width:900px){
