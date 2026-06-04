@@ -204,10 +204,21 @@ section{
     line-height:1.15;
 }
 
+.portfolio-featured{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    margin-bottom:30px;
+}
+
 .portfolio-grid{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.portfolio-featured .portfolio-image{
+    height:360px;
 }
 
 .portfolio-card{
@@ -224,7 +235,7 @@ section{
 }
 
 .portfolio-image{
-    height:240px;
+    height:300px;
     background:#222222;
     border-bottom:6px solid #ffc400;
     overflow:hidden;
@@ -408,6 +419,7 @@ footer{
 @media(max-width:900px){
     .grid-3,
     .grid-2,
+    .portfolio-featured,
     .portfolio-grid{
         grid-template-columns:1fr;
     }
@@ -490,89 +502,53 @@ footer{
             make it easy to understand, and make it easy for people to take the next step.
         </p>
 
-        <div class="portfolio-grid">
-
-            <div class="portfolio-card">
+        <div class="portfolio-featured">
+<div class="portfolio-card">
                 <div class="portfolio-image">
                     <img src="https://primary.jwwb.nl/public/l/y/c/temp-wvtzrtmtxegucqwwsmov/screenshot-2026-06-04-121233-high.png?enable-io=true&width=816" alt="The Stupid History Minute website example">
                 </div>
-                <div class="portfolio-content">
-                    <span class="portfolio-tag">Creator Brand</span>
-                    <h3>The Stupid History Minute</h3>
-                    <p>A bold, mobile-friendly podcast website designed to highlight episodes, books, speaking appearances, and listener engagement.</p>
-                </div>
             </div>
-
-
-            <div class="portfolio-card">
+            </div>
+<div class="portfolio-card">
                 <div class="portfolio-image">
                     <img src="https://primary.jwwb.nl/public/l/y/c/temp-wvtzrtmtxegucqwwsmov/screenshot-2026-06-04-161851-high.png?enable-io=true&width=1252" alt="UNFILTERED Studios Podcast Network website example">
                 </div>
-                <div class="portfolio-content">
-                    <span class="portfolio-tag">Podcast Network</span>
-                    <h3>UNFILTERED Studios Podcast Network</h3>
-                    <p>A podcast network website featuring a continuous player, member directory, exclusive content, podcast discovery tools, and a modern user experience designed for listeners and creators alike.</p>
-                </div>
             </div>
+            </div>
+        </div>
 
-
-
-            <div class="portfolio-card">
+        <div class="portfolio-grid">
+<div class="portfolio-card">
                 <div class="portfolio-image">
                     <img src="https://primary.jwwb.nl/public/l/y/c/temp-wvtzrtmtxegucqwwsmov/screenshot-2026-06-04-121200-high.png?enable-io=true&width=816" alt="Koehler Home Improvement website example">
                 </div>
-                <div class="portfolio-content">
-                    <span class="portfolio-tag">Home Improvement</span>
-                    <h3>Koehler Home Improvement</h3>
-                    <p>A modern home improvement website layout designed to show credibility, highlight services, and make quote requests easy for homeowners.</p>
-                </div>
             </div>
-
-            <div class="portfolio-card">
+            </div>
+<div class="portfolio-card">
                 <div class="portfolio-image">
                     <img src="https://primary.jwwb.nl/public/l/y/c/temp-wvtzrtmtxegucqwwsmov/screenshot-2026-06-04-120922-high.png?enable-io=true&width=816" alt="UNFILTERED Sports Weekly website example">
                 </div>
-                <div class="portfolio-content">
-                    <span class="portfolio-tag">Sports Podcast</span>
-                    <h3>UNFILTERED Sports Weekly</h3>
-                    <p>A bold sports podcast site with a darker visual style, strong headline, show artwork, and simple listener-focused calls to action.</p>
-                </div>
             </div>
-
-            <div class="portfolio-card">
+            </div>
+<div class="portfolio-card">
                 <div class="portfolio-image">
                     <img src="https://primary.jwwb.nl/public/l/y/c/temp-wvtzrtmtxegucqwwsmov/screenshot-2026-06-04-115902-high.png?enable-io=true&width=816" alt="Petals of Support website example">
                 </div>
-                <div class="portfolio-content">
-                    <span class="portfolio-tag">Podcast Website</span>
-                    <h3>Petals of Support Podcast</h3>
-                    <p>A soft, welcoming podcast landing page with a warm design, clear messaging, and simple calls to action for listeners and topic submissions.</p>
-                </div>
             </div>
-
-            <div class="portfolio-card">
+            </div>
+<div class="portfolio-card">
                 <div class="portfolio-image">
                     <img src="https://primary.jwwb.nl/public/l/y/c/temp-wvtzrtmtxegucqwwsmov/screenshot-2026-06-04-121117-high.png?enable-io=true&width=816" alt="Koehler Roof Solutions website example">
                 </div>
-                <div class="portfolio-content">
-                    <span class="portfolio-tag">Local Service Business</span>
-                    <h3>Koehler Roof Solutions</h3>
-                    <p>A professional roofing service page focused on trust, homeowner guidance, service clarity, and scheduling a free roof evaluation.</p>
-                </div>
             </div>
-
-            <div class="portfolio-card">
+            </div>
+<div class="portfolio-card">
                 <div class="portfolio-image">
                     <img src="https://primary.jwwb.nl/public/l/y/c/temp-wvtzrtmtxegucqwwsmov/screenshot-2026-06-04-120119-high.png?enable-io=true&width=816" alt="Nailed It Travel website example">
                 </div>
-                <div class="portfolio-content">
-                    <span class="portfolio-tag">Travel Business</span>
-                    <h3>Nailed It Travel</h3>
-                    <p>A clean travel planning site built around strong first impressions, clear service benefits, and an easy path for visitors to start planning.</p>
-                </div>
             </div>
-
-        </div>
+            </div>
+        </div></div>
     </div>
 </section>
 
